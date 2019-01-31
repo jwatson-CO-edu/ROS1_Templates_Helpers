@@ -6,10 +6,10 @@
 	<!-- There are a minimal set of tags that need to be nested within the <package> tag to make the package manifest complete. -->
 
 	<!-- REQ'D: <name> - The name of the package -->
-	<name>PACKAGE_BAME_HERE</name>
+	<name>PACKAGE_NAME_HERE</name>
 
 	<!-- REQ'D: <version> - The version number of the package (required to be 3 dot-separated integers) -->
-	<version>YYYY.MM.d</version>
+	<version>YYYY.m.d</version>
 
 	<!-- REQ'D: <description> - A description of the package contents -->
 	<description>A_description_of_the_package_contents</description>
