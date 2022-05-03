@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<launch>
+
+
+    
+    <!-- 1. Load the robot description -->
+    <!-- https://answers.ros.org/question/297615/how-to-load-a-urdf-file-to-rviz/?answer=297619#post-id-297619 -->
+    <!-- https://www.theconstructsim.com/ros-qa-142-how-to-create-launch-file-for-urdf-and-open-in-gazebo/ -->
+    <!-- <param name="robot_description" command="cat '$(find sawyer_robot)/sawyer_description/urdf/sawyer.urdf.xacro'" output="screen" /> -->
+    <!-- <param name="robot_description" command="cat '$(find sawyer_description)/urdf/sawyer.urdf.xacro'" /> -->
+    <param name="rviz_robot_description" command="$(find xacro)/xacro --inorder '$(find sawyer_description)/urdf/sawyer.urdf.xacro'"/>
+    
+
+    <!-- <include file="$(find ll4ma_teleop)/launch/lbr4_to_param_server.launch"/> -->
+    
+    <!-- 2. Load the main visualization environment -->
+    <!-- <include file="$(find ll4ma_teleop)/launch/lbr4_commander.launch"/> -->
+    
+    <!-- 3. Start the IK service , Attempt to restart until the params above are available -->
+    <!-- <node name="q_from_pose" pkg="motion_cost" type="get_q_from_pose_serv.py" respawn="true" respawn_delay="15" 
+          output="screen" /> -->
+
+</launch>
